@@ -24,13 +24,11 @@
     <a href="#" class="logo"><i class="fas fa-trash"></i>SmartWaste</a>
     <nav class="navbar">
         <a class="active" href="#home">Home</a>
-        <a href="#services">About Us</a>
         <a href="#about">Service</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#scheduler">Schedules & Recycling Tracker</a>
+        <a href="{{ url_for('schedules') }}">schedules</a>
         <a href="{{ url_for('admin_dashboard') }}">Admin Dashboard</a>
         {% if 'username' in session %}
-            <span class="welcome-text">Welcome, {{ session['username'] }}</span>
+            <!-- <span class="welcome-text">Welcome, {{ session['username'] }}</span> -->
         {% endif %}
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
@@ -342,9 +340,9 @@
             <div class="swiper-slide slide">
                 <i class="fas fa-quote-right"></i>
                 <div class="user">
-                    <img src="{{ url_for('static', filename='images/KhotGarang.jpg') }}" alt="">
+                    <img src="{{ url_for('static', filename= 'images/442398157_796727222553982_1116680115716803265_n.jpg') }}" alt="">
                     <div class="user-info">
-                        <h3>Khot G. Pawoui</h3>
+                        <h3>JOK ISREAL CHOL</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -528,3 +526,4 @@
 
 </body>
 </html>
+
