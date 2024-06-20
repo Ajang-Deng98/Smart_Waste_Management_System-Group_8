@@ -78,8 +78,16 @@ def dashboard():
         return redirect(url_for('login'))
     return render_template('index.html')
 
+@app.route('/schedules')
+def schedules():
+    if 'username' not in session:
+        flash('Please log in first.', 'error')
+        return redirect(url_for('login'))
+    return render_template('schedules.html')
+
 if __name__ == '__main__':
     # Use app context to create the database
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+
