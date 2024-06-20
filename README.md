@@ -36,8 +36,8 @@ This project is part of the Enterprise Web Development course and focuses on bui
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: Flask/Node.js
-- **Database**: PostgreSQL/MySQL, SQLAlchemy ORM
+- **Backend**: Flask
+- **Database**: SQLAlchemy ORM
 - **Version Control**: Git, GitHub
 - **CI/CD**: GitHub Actions, Heroku/AWS
 - **Testing**: Unittest module
@@ -56,5 +56,4 @@ This project is part of the Enterprise Web Development course and focuses on bui
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/smart-waste-management-system.git
-   cd smart-waste-management-system
+   git clone https://github.com/Ajang-Deng98/Smart_Waste_Management_System-Group_8.git
