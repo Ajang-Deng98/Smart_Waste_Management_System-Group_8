@@ -79,7 +79,7 @@ def dashboard():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    # Use app context to create the database
+    # Use app context to create the databases
     with app.app_context():
         db.create_all()
     app.run(debug=True)
